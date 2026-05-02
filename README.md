@@ -1,3 +1,27 @@
+# 🚀 Streaming App DevOps Project
+
+## 📌 Overview
+This project demonstrates containerization and CI/CD implementation of a MERN application.
+
+## 🏗 Architecture
+Frontend (React + Nginx) → Backend (Node.js) → MongoDB  
+Docker → AWS ECR → Jenkins (in progress)
+
+## ✅ Completed
+- Dockerization of backend service
+- Dockerization of frontend service
+- MongoDB integration using Docker
+- Successfully built and ran containers
+- Pushed Docker images to AWS ECR
+- Application tested locally (health endpoint working)
+
+## 🔄 In Progress
+- Jenkins CI/CD pipeline setup
+- Kubernetes (EKS) deployment
+- Monitoring using CloudWatch
+
+---
+
 # StreamingApp
 
 Stream premium video content, host live watch parties, and manage your catalogue with a modern microservice architecture. The platform now ships with a production-ready admin portal, real-time chat, S3-backed adaptive streaming, and a redesigned cinematic frontend experience.
