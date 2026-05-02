@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: streaming-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: streaming-backend
+  template:
+    metadata:
+      labels:
+        app: streaming-backend
+    spec:
+      containers:
+      - name: backend
+        image: <your-ecr-image-url>
+        ports:
+        - containerPort: 3001
