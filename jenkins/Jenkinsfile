@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone Repo') {
+            steps {
+                git 'https://github.com/shubham73799/StreamingApp'
+            }
+        }
+
+        stage('Build Docker Images') {
+            steps {
+                echo 'Building Docker images...'
+            }
+        }
+
+        stage('Push to ECR') {
+            steps {
+                echo 'Pushing images to AWS ECR...'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Deployment step (Kubernetes - in progress)...'
+            }
+        }
+    }
+}
